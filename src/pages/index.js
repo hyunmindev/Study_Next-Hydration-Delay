@@ -10,14 +10,12 @@ function sleep(ms) {
 
 export default function Home() {
   useEffect(() => {
-    // if (typeof window !== 'undefined') {
     window.addEventListener('load', () => {
       console.log('window load');
     });
     document.addEventListener('DOMContentLoaded', () => {
       console.log('document DOMContentLoaded');
     });
-    // }
   }, []);
   sleep(5000);
   return (
